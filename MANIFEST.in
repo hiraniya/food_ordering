@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include food_ordering *.css
+recursive-include food_ordering *.csv
+recursive-include food_ordering *.html
+recursive-include food_ordering *.ico
+recursive-include food_ordering *.js
+recursive-include food_ordering *.json
+recursive-include food_ordering *.md
+recursive-include food_ordering *.png
+recursive-include food_ordering *.py
+recursive-include food_ordering *.svg
+recursive-include food_ordering *.txt
+recursive-exclude food_ordering *.pyc
