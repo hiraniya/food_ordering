@@ -11,9 +11,6 @@ class FoodList(Document):
 @frappe.whitelist()
 def item(item_code, prize):
 
-	frappe.errprint("ghvvvvvvvvvvvv")
-	frappe.errprint(item_code)
-	
 	doc=frappe.new_doc("Item")
 	doc.update({
 			"item_code":item_code,

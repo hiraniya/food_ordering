@@ -2,7 +2,11 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Food Order', {
-	onload: function() {
+	item: function() {
+		cur_frm.save()
+
+	},
+	item1: function() {
 		cur_frm.save()
 
 	},
@@ -20,9 +24,7 @@ frappe.ui.form.on('Food Order', {
 						 "item_table":cur_frm.doc.hd,
 						
 					 },
-					 callback(r){
-			 console.log("fdgdg")
-			}
+				
 		   })
 	  }	
 	  
@@ -45,13 +47,7 @@ frappe.ui.form.on('Food Order', {
 				frm.add_custom_button(__('payment'), function () {
 					frappe.set_route("Form", "Payment Entry",
 					"new-payment-entry-1")
-					// frappe.call({
-					// 	method:"food_ordering.food_ordering.doctype.food_order.food_order.payment",
-					// 	args: { 
-					// 		 "payment":cur_frm.doc.total_payable_amount,
-				
-					// 		},
-					// 	})
+					
 			   })
 			   }
 	   })
