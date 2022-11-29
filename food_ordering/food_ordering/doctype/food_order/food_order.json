@@ -1,0 +1,208 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": ".####",
+ "creation": "2022-11-29 07:57:20.190139",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "column_break_2",
+  "prize",
+  "image_link",
+  "column_break_4",
+  "image",
+  "section_break_7",
+  "image1",
+  "column_break_9",
+  "peize1",
+  "list_of_food1",
+  "column_break_12",
+  "item1",
+  "address_section",
+  "customer_name",
+  "address_1",
+  "address_2",
+  "column_break_18",
+  "city",
+  "phone",
+  "section_break_21",
+  "hd",
+  "total_payable_amount",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Hydrabat Biriyani",
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Food List"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item.prize",
+   "fieldname": "prize",
+   "fieldtype": "Int",
+   "label": "Prize"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "image",
+   "options": "image_link"
+  },
+  {
+   "fetch_from": "item.item_link",
+   "fieldname": "image_link",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "image link"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Chicken Chilli",
+   "fieldname": "item1",
+   "fieldtype": "Link",
+   "label": "Item ",
+   "options": "Food List"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item1.prize",
+   "fieldname": "peize1",
+   "fieldtype": "Int",
+   "label": "Prize"
+  },
+  {
+   "fetch_from": "item1.item_link",
+   "fieldname": "list_of_food1",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "image link1"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image1",
+   "fieldtype": "Image",
+   "label": "image",
+   "options": "list_of_food1"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Address"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "address_1",
+   "fieldtype": "Data",
+   "label": "Address 1"
+  },
+  {
+   "fieldname": "address_2",
+   "fieldtype": "Data",
+   "label": "Address 2"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hd",
+   "fieldtype": "Table",
+   "options": "Enter Your Food List"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Food Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_payable_amount",
+   "fieldtype": "Currency",
+   "label": "Total Payable Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-11-29 15:06:26.695657",
+ "modified_by": "Administrator",
+ "module": "Food Ordering",
+ "name": "Food Order",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Food Booking User",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
