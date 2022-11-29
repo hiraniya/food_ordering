@@ -20,7 +20,6 @@ def customer(customer, add1, add2, city, phone):
 		
 	})
 	doc.save(ignore_permissions=True)
-	# return item(item_table)
 
 
 
@@ -42,7 +41,6 @@ def sales_order(table, customer):
         })
     
 
-    frappe.errprint(item)
     doc.update({
             "customer":customer,
             "items":item_code,
@@ -50,7 +48,3 @@ def sales_order(table, customer):
     doc.save(ignore_permissions=True)
 				
 
-# @frappe.whitelist()
-# def payment(payment, self):
-# 	   self.party_type="Customer"
-           

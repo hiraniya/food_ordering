@@ -10,9 +10,7 @@ frappe.ui.form.on('Food List', {
 							 "prize":cur_frm.doc.prize,
 							
 						 },
-						 callback(r){
-				 console.log("fdgdg")
-				}
+					
 			   })
 	}
 });
